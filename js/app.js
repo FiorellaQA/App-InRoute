@@ -13,3 +13,10 @@ function initMap(position) {
     map: map
   });
 }
+var inputOrigen = document.getElementById("origen");
+var inputDestino = document.getElementById("destino");
+
+new google.maps.places.Autocomplete(inputOrigen);
+new google.maps.places.Autocomplete(inputDestino);
+var directionsService = new google.maps.DirectionsService;
+var directionsDisplay = new google.maps.DirectionsRender;

@@ -4,20 +4,21 @@ body{
 	margin:0;
 	padding: 0;
 }
-/*body{
-	font-size: 15px;
-	font-family: 
+section.barraSuperior{
+    padding: 2rem 1rem;
+    background-color: #f7b617;
 }
-img{
-	width: 100%;
-	height: auto;
-}*/
+.containerFlex{
+	display: flex;
+	justify-content: space-between;
+}
 #map {
 	height: 100%;
-/*width: 500px;
-  height: 500px;
-  border: 2px solid black;*/
 }
-header{
-	background-color: red;
+.containerBtn{
+	padding-left: 1.5rem;
+	border-left: 2px solid white; 
+}
+div.widthInput{
+	width: 39rem;
 }
