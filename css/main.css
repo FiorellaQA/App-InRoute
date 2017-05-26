@@ -4,7 +4,7 @@ body{
 	margin:0;
 	padding: 0;
 }
-section.barraSuperior{
+.barraSuperior{
     padding: 2rem 1rem;
     background-color: #f7b617;
 }
@@ -13,7 +13,8 @@ section.barraSuperior{
 	justify-content: space-between;
 }
 #map {
-	height: 100%;
+	    height: 400px;
+        width: 100%;
 }
 .containerBtn{
 	padding-left: 1.5rem;

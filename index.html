@@ -10,20 +10,20 @@
     <script src="https://use.fontawesome.com/18642168a3.js"></script>
   </head>
   <body>
-    <section class="barraSuperior">  
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10">
+    <div class="container-fluid">
+<!--       <div id="tarifa"></div>
+      <div class="row barraSuperior">
+        <div class="col-md-10">
           <form class="form-inline containerFlex">
             <div class="form-group">
-              <label class="sr-only" for="origen">Amount (in dollars)</label>
+              <label class="sr-only" for="origen">Origen</label>
               <div class="input-group widthInput">
                 <label class="input-group-addon"><i class="glyphicon glyphicon-record" aria-hidden="true"></i></label>
                 <input type="text" class="form-control" id="origen" placeholder="Origen">
               </div>
             </div>
             <div class="form-group">
-              <label class="sr-only" for="destino">Amount (in dollars)</label>
+              <label class="sr-only" for="destino">Destino</label>
               <div class="input-group widthInput">
                 <label class="input-group-addon"><i class="glyphicon glyphicon-send" aria-hidden="true"></i></label>
                 <input type="text" class="form-control" id="destino" placeholder="Destino">
@@ -31,16 +31,15 @@
             </div>
             <button type="submit" class="btn">Trazar Ruta</button>
           </form> 
-          </div>
-          <div class="col-md-2 containerBtn">
-            <button type="button" class="btn">Encuentrame</button>
-          </div>
-        </div> 
-      </div>       
-    </section>
-
-    <!-- <div id="map"></div> -->
-
+        </div>
+        <div class="col-md-2 containerBtn">
+          <button type="button" class="btn" id="encuentrame">Encuentrame</button>
+        </div>
+      </div> -->
+      <div class="row">
+        <div id="map"></div>
+      </div>
+    </div>
     <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Incluir todos tus scripts apartir de este punto -->
