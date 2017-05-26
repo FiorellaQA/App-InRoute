@@ -1,0 +1,23 @@
+html,
+body{
+	height: 100%;
+	margin:0;
+	padding: 0;
+}
+/*body{
+	font-size: 15px;
+	font-family: 
+}
+img{
+	width: 100%;
+	height: auto;
+}*/
+#map {
+	height: 100%;
+/*width: 500px;
+  height: 500px;
+  border: 2px solid black;*/
+}
+header{
+	background-color: red;
+}
