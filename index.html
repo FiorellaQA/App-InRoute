@@ -4,47 +4,56 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap -->
+    <link href="assets/css/main.css" rel="stylesheet">
     <title>App In Route | Servicio de taxi</title>
     <script src="https://use.fontawesome.com/18642168a3.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-<!--       <div id="tarifa"></div>
-      <div class="row barraSuperior">
-        <div class="col-md-10">
-          <form class="form-inline containerFlex">
-            <div class="form-group">
-              <label class="sr-only" for="origen">Origen</label>
-              <div class="input-group widthInput">
-                <label class="input-group-addon"><i class="glyphicon glyphicon-record" aria-hidden="true"></i></label>
-                <input type="text" class="form-control" id="origen" placeholder="Origen">
+    <div id="map"></div> 
+    <section class="barraSuperior">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="logo col-md-1"></div> -->
+          <div class="col-sm-9 col-md-10 col-lg-6 col-lg-offset-4">
+            <form id="form1" class="form-inline containerFlex">
+              <div class="form-group">
+                <label class="sr-only" for="origen">Origen</label>
+                <div class="input-group widthInput border-shadow">
+                  <label class="input-group-addon"><i class="glyphicon glyphicon-record" aria-hidden="true"></i></label>
+                  <input type="text" class="form-control" id="input-origen" placeholder="Origen">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="destino">Destino</label>
-              <div class="input-group widthInput">
-                <label class="input-group-addon"><i class="glyphicon glyphicon-send" aria-hidden="true"></i></label>
-                <input type="text" class="form-control" id="destino" placeholder="Destino">
+              <div class="form-group">
+                <label class="sr-only" for="destino">Destino</label>
+                <div class="input-group widthInput border-shadow">
+                  <label class="input-group-addon"><i class="glyphicon glyphicon-send" aria-hidden="true"></i></label>
+                  <input type="text" class="form-control" id="input-destino" placeholder="Destino">
+                </div>
               </div>
-            </div>
-            <button type="submit" class="btn">Trazar Ruta</button>
-          </form> 
+              <div class="form-group">
+                <button id="trazar-ruta" type="submit" class="btn form-control border-shadow">Trazar Ruta</button>
+              </div>
+            </form> 
+          </div>
+          <div class="col-sm-3 col-md-2 col-lg-2">
+            <button type="button" class="btn form-control border-shadow" id="encuentrame">Encuentrame</button>
+          </div>
         </div>
-        <div class="col-md-2 containerBtn">
-          <button type="button" class="btn" id="encuentrame">Encuentrame</button>
+        <div class="row" id="tarifa">
+          <span id="textoTarifa"></span>
         </div>
-      </div> -->
-      <div class="row">
-        <div id="map"></div>
-      </div>
-    </div>
+      </div> 
+    </section>
+
+    
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbG5e2NH-wNkCOEZSKVBX-E53Hco8ffwc&callback=initMap&libraries=places"></script>
     <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Incluir todos tus scripts apartir de este punto -->
-    <script src="js/bootstrap.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbG5e2NH-wNkCOEZSKVBX-E53Hco8ffwc&callback=initMap&libraries=places"></script>
-    <script src="js/app.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+ 
+    <script src="assets/js/app.js" type="text/javascript"></script>
   </body>
 </html>
