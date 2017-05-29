@@ -10,7 +10,6 @@
     <script src="https://use.fontawesome.com/18642168a3.js"></script>
   </head>
   <body>
-    <div id="map"></div> 
     <section class="barraSuperior">
       <div class="container">
         <div class="row">
@@ -20,14 +19,14 @@
               <div class="form-group">
                 <label class="sr-only" for="origen">Origen</label>
                 <div class="input-group widthInput border-shadow">
-                  <label class="input-group-addon"><i class="glyphicon glyphicon-record" aria-hidden="true"></i></label>
+                  <label class="input-group-addon addonPersonal"><i class="glyphicon glyphicon-record" aria-hidden="true"></i></label>
                   <input type="text" class="form-control" id="input-origen" placeholder="Origen">
                 </div>
               </div>
               <div class="form-group">
                 <label class="sr-only" for="destino">Destino</label>
                 <div class="input-group widthInput border-shadow">
-                  <label class="input-group-addon"><i class="glyphicon glyphicon-send" aria-hidden="true"></i></label>
+                  <label class="input-group-addon addonPersonal"><i class="glyphicon glyphicon-send" aria-hidden="true"></i></label>
                   <input type="text" class="form-control" id="input-destino" placeholder="Destino">
                 </div>
               </div>
@@ -40,11 +39,12 @@
             <button type="button" class="btn form-control border-shadow" id="encuentrame">Encuentrame</button>
           </div>
         </div>
-        <div class="row" id="tarifa">
+        <div class="row border-shadow none" id="tarifa">
           <span id="textoTarifa"></span>
         </div>
       </div> 
     </section>
+    <div id="map"></div> 
 
     
 
